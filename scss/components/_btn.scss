@@ -1,0 +1,21 @@
+.btn {
+  padding: 12px 20px;
+  border-radius: 24px;
+  background: var(--beauty-landing-22);
+  border: 2px solid var(--beauty-landing-22);
+  color: var(--beauty-landing-2-background);
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.2s ease-in, color 0.2s ease-in;
+
+  &:hover {
+    border: 2px solid var(--beauty-landing-22);
+    background: transparent;
+    color: var(--beauty-landing-2-c-1);
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 12px 28px;
+    font-size: 18px;
+  }
+}

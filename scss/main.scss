@@ -1,0 +1,27 @@
+// utils
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/text';
+@import './utils/utils';
+
+// // base style
+@import './base';
+
+// components
+@import './components/btn';
+@import './components/title';
+@import './components/social-contacts';
+@import './components/pagination';
+@import './components/procedure-card';
+@import './components/form';
+@import './components/modal';
+
+// leyouts
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/mobile-menu';
+@import './layouts/about';
+@import './layouts/why-us';
+@import './layouts/procedures';
+@import './layouts/contacts';
+@import './layouts/footer';

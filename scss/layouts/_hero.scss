@@ -1,0 +1,88 @@
+.hero {
+  padding: 70px 0 56px;
+  // background: url(./../images/hero-bg.jpg), lightgray 0px -5.999px / 100% 111.79% no-repeat;
+
+  background-image: linear-gradient(
+      57deg,
+      #fff 20.92%,
+      rgba(255, 255, 255, 0.78) 44.46%,
+      rgba(255, 255, 255, 0.2) 58.9%,
+      rgba(255, 255, 255, 0) 72.45%
+    ),
+    url('./../images/hero-bg.jpg');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        57deg,
+        #fff 20.92%,
+        rgba(255, 255, 255, 0.78) 44.46%,
+        rgba(255, 255, 255, 0.2) 58.9%,
+        rgba(255, 255, 255, 0) 72.45%
+      ),
+      url('./../images/hero-bg@2x.jpg');
+  }
+
+  background-repeat: no-repeat;
+  background-position: 32% center;
+  background-size: cover;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 123px 0 126px;
+  }
+
+  &__inner {
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 106px;
+    }
+  }
+
+  &__pre-text {
+    font-size: 12px;
+    line-height: 1.5;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      line-height: normal;
+    }
+  }
+
+  &__title {
+    font-family: 'Play', sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 0.85;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 140px;
+      max-width: 160px;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 8px;
+  }
+
+  &__end-text {
+    color: var(--beauty-landing-2-c-3);
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.63;
+    max-width: 186px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 215px;
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+}

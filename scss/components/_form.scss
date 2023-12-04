@@ -1,0 +1,57 @@
+.form {
+  color: var(--beauty-landing-25);
+  text-align: center;
+
+  &__title {
+    margin-bottom: 32px;
+    color: var(--beauty-landing-2-background);
+    text-align: center;
+  }
+
+  &__field {
+    margin-bottom: 24px;
+
+    &--contacts-form {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__input {
+    padding: 18px 33px;
+    width: 100%;
+    border-radius: 32px;
+    border: 2px solid var(--beauty-landing-25);
+    background-color: transparent;
+    color: var(--beauty-landing-2-background);
+
+    &::placeholder {
+      color: var(--beauty-landing-2-background);
+    }
+
+    &:focus,
+    &:hover {
+      background-color: var(--beauty-landing-25);
+      outline: none;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 8px;
+    &:hover {
+      background-color: var(--beauty-landing-22);
+    }
+  }
+
+  &__btn &__info {
+    max-width: 213px;
+    font-size: 12px;
+    line-height: 1.5;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

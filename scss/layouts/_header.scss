@@ -1,0 +1,74 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 25px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 32px 0;
+    }
+  }
+
+  &__logo {
+    width: 57px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 74px;
+    }
+  }
+
+  &__menu-list {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 30px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 56px;
+    }
+  }
+
+  &__social-contacts {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 32px;
+      height: 32px;
+    }
+  }
+
+  &__burger {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--beauty-landing-2-background);
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__link {
+    transition: color 0.2s ease-in;
+    &:hover {
+      color: var(--beauty-landing-22);
+    }
+  }
+}
